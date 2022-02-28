@@ -1,0 +1,133 @@
+:root {
+	/* Primary */
+	--Very_dark_desaturated_blue: hsl(238, 29%, 16%);
+	--Soft_red: hsl(14, 88%, 65%);
+
+	/* Gradient
+    background gradients;
+  */
+	--Soft_violet: hsl(273, 75%, 66%);
+	--Soft_blue: hsl(240, 73%, 65%);
+
+	/* Text */
+	--Very_dark_grayish_blue: hsl(237, 12%, 33%);
+	--Dark_grayish_blue: hsl(240, 6%, 50%);
+
+	/* Divider */
+	--Light_grayish_blue: hsl(240, 5%, 91%);
+
+	/* weight */
+	--font-weight-regular: 400;
+	--font-weight-bold: 700;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body {
+	font-family: "Kumbh Sans", sans-serif;
+	font-size: 12px;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	background: linear-gradient(var(--Soft_violet), var(--Soft_blue));
+}
+
+.card {
+	width: clamp(300px, 100%, 850px);
+	background-color: white;
+	border-radius: 1rem;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	padding: 3rem;
+  margin-bottom: 2rem;
+}
+
+.left {
+	position: relative;
+	right: 5rem;
+	/* width: 500px; */
+}
+
+.img {
+	width: 100%;
+}
+
+.bg-pattern {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.right {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+}
+
+.questions {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.question {
+	font-weight: var(--font-weight-regular);
+	position: relative;
+	padding: .5rem 0;
+	border-bottom: 1px solid var(--Light_grayish_blue);
+  width: 350px;
+}
+
+.question__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1rem;
+  cursor: pointer;
+  width: 100%;
+	position: relative;
+}
+
+.question__icon {
+  /* width: .5rem; */
+  /* height: .5rem; */
+	top: 50%;
+	right: 0;
+}
+
+.question__icon--rotate {
+  transform: rotate(180deg);
+}
+
+.question__answer {
+  margin-top: .5rem;
+	color: var(--Dark_grayish_blue);
+}
+
+.question__answer--hidden {
+  display: none;
+}
+
+/* #region Attribution*/
+.attribution {
+  color: white;
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: black;
+}
+/* #endregion */
