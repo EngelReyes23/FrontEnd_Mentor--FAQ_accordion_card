@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	document.querySelectorAll(".question").forEach((question) => {
 		// Add the event Click on each question title
 		question.firstElementChild.addEventListener("click", function () {
+			// If the item is already open, do nothing
+			if (this.classList.contains("question__title--active")) return;
+
 			// Bold Title
 			this.classList.toggle("question__title--active");
 
@@ -15,8 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 			// Hidden other questions
 			document.querySelectorAll(".question__answer").forEach((answer) => {
-        if (answer !== question.children[1]) {
-          answer.parentNode.firstElementChild.classList.remove("question__title--active");
+				if (answer !== question.children[1]) {
+					answer.parentNode.firstElementChild.classList.remove(
+						"question__title--active"
+					);
 					this.classList.toggle("question__title--active");
 					answer.classList.add("question__answer--hidden");
 					this.firstElementChild.classList.toggle("question__icon--rotate");

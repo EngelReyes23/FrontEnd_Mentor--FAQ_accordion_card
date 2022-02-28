@@ -111,9 +111,18 @@ body {
 	position: relative;
 }
 
+.question__title:hover {
+	color: orange;
+	font-weight: var(--font-weight-bold);
+}
+
 .question__title--active {
 	font-size: 13px;
 	font-weight: var(--font-weight-bold);
+}
+
+.question__title--active:hover{
+	color: black;
 }
 
 .question__icon {
