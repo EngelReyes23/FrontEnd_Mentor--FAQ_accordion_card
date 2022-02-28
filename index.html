@@ -25,19 +25,14 @@
 	<body>
 		<main class="main">
 			<div class="card">
-				<div class="left">
+				<div class="card__img">
 					<img
+						src="./images/illustration-woman-online-mobile.svg"
 						class="img"
-						src="./images/illustration-woman-online-desktop.svg"
-						alt=""
-					/>
-					<img
-						class="bg-pattern"
-						src="./images/bg-pattern-desktop.svg"
-						alt="bg-pattern-desktop"
+						alt="illustration"
 					/>
 				</div>
-				<div class="right">
+				<div class="card__content">
 					<h1>FAQ</h1>
 					<ul class="questions">
 						<li class="question">
@@ -56,15 +51,15 @@
 							</p>
 						</li>
 						<li class="question">
-							<p class="question__title">
+							<p class="question__title question__title--active">
 								What is the maximum file upload size?
 								<img
-									class="question__icon"
+									class="question__icon question__icon--rotate"
 									src="./images/icon-arrow-down.svg"
 									alt=""
 								/>
 							</p>
-							<p class="question__answer ">
+							<p class="question__answer">
 								No more than 2GB. All files in your account must fit your
 								allotted storage space.
 							</p>
@@ -87,7 +82,7 @@
 							<p class="question__title">
 								Can I cancel my subscription?
 								<img
-									class="question__icon question__icon--rotate"
+									class="question__icon"
 									src="./images/icon-arrow-down.svg"
 									alt=""
 								/>
@@ -122,5 +117,7 @@
 				>. Coded by <a href="#">Your Name Here</a>.
 			</div>
 		</main>
+
+		<script src="./js/index.js"></script>
 	</body>
 </html>
