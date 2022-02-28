@@ -17,14 +17,15 @@ document.addEventListener("DOMContentLoaded", function () {
 			question.children[1].classList.toggle("question__answer--hidden");
 
 			// Hidden other questions
-			document.querySelectorAll(".question__answer").forEach((answer) => {
+			document.querySelectorAll(".question__answer").forEach(function (answer) {
 				if (answer !== question.children[1]) {
 					answer.parentNode.firstElementChild.classList.remove(
 						"question__title--active"
 					);
-					this.classList.toggle("question__title--active");
 					answer.classList.add("question__answer--hidden");
-					this.firstElementChild.classList.toggle("question__icon--rotate");
+					answer.parentNode.firstElementChild.firstElementChild.classList.remove(
+						"question__icon--rotate"
+					);
 				}
 			});
 		});
