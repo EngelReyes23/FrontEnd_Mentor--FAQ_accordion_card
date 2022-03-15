@@ -1,0 +1,41 @@
+:root {
+	/* Primary */
+	--Very_dark_desaturated_blue: hsl(238, 29%, 16%);
+	--Soft_red: hsl(14, 88%, 65%);
+
+	/* Gradient
+    background gradients;
+  */
+	--Soft_violet: hsl(273, 75%, 66%);
+	--Soft_blue: hsl(240, 73%, 65%);
+
+	/* Text */
+	--Very_dark_grayish_blue: hsl(237, 12%, 33%);
+	--Dark_grayish_blue: hsl(240, 6%, 50%);
+
+	/* Divider */
+	--Light_grayish_blue: hsl(240, 5%, 91%);
+
+	/* weight */
+	--font-weight-regular: 400;
+	--font-weight-bold: 700;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Kumbh Sans", sans-serif;
+	font-size: 12px;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	user-select: none;
+}
