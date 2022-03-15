@@ -21,6 +21,9 @@
 	top: 35%;
 	left: -6.5rem;
 	z-index: 1;
+	animation: floatUp 2s infinite;
+	animation-duration: infinite;
+	animation-delay: 2s;
 
 	@media (min-width: 1024px) {
 		display: block;
@@ -39,7 +42,7 @@
 	flex-direction: column;
 	align-items: flex-start;
 	padding: 1.5rem;
-  padding-bottom: 2rem;
+	padding-bottom: 2rem;
 	margin-bottom: 2rem;
 
 	@media screen and (min-width: 1024px) {
@@ -49,8 +52,8 @@
 		background: url("../images/bg-pattern-desktop.svg"), white;
 		background-position: -35rem 60%;
 		background-repeat: no-repeat;
-    padding: 3rem;
-    height: 475px;
+		padding: 3rem;
+		height: 475px;
 	}
 }
 
@@ -96,8 +99,8 @@
 
 	@media screen and (min-width: 1024px) {
 		margin-top: 0;
-    position: relative;
-    right: 3rem;
+		position: relative;
+		right: 3rem;
 	}
 }
 
@@ -124,7 +127,7 @@
 	cursor: pointer;
 	width: 100%;
 	position: relative;
-  margin-bottom: .2rem;
+	margin-bottom: 0.2rem;
 }
 
 .question__title:hover {
@@ -175,3 +178,15 @@
 	color: black;
 }
 /* #endregion */
+
+@keyframes floatUp {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-0.5rem);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
